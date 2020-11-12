@@ -1,0 +1,194 @@
+@charset "UTF-8"
+
+/*共通部分*/
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Yu Gothic Medium","游ゴシック Medium,YuGothic",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #000;
+    /*background-color: #e1e1e1;*/
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*HEADER*/
+.logo {
+    width: 240px;
+    margin-top: 34px;
+}
+.main-nav li {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    list-style: none;
+    margin-top: 34px;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #000;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*大きな背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+#home { 
+    background-image: url(menu.png);
+    min-height: 100vh;
+}
+
+/*profile*/
+#profile {
+    margin-top: 40px;
+}
+.profile-contents {
+    font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ";
+    margin-left: 220px; 
+}
+#profile .profile-title {
+    font-size: 70px;   
+}
+#sns {
+    display: block;
+}
+.insta {
+    width: 3.5%;
+    display: inline-block;
+    margin-left: 100px;
+}
+.twitter {
+    width: 5%;
+    display: inline-block;
+    margin-left: 15px;
+}
+.profile-name {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.profile-sentence {
+    font-size: 21px;
+    margin-top: 20px;
+}
+.profile-sentence a {
+    text-decoration: underline;
+}
+.cam {
+    color: #000;
+}
+#school {
+    display: flex;
+    background: #fff;
+    margin-top: 40px;
+    padding: 2% 0;
+    padding-left: 300px;
+    font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ";
+}
+.school-box {
+    font-size: 30px;
+    justify-content: space-between;
+}
+.school-box p {
+    padding: 12px 10px;
+}
+
+/*art*/
+.art-contents {
+    font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ";
+    text-align: center;
+}
+.art-title {
+    font-size: 70px;
+}
+.item p {
+    font-size: 9px;
+    margin-top: 20px;
+    font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ";
+    text-align: center;
+}
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+    font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ";
+}
+.item img {
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+.item-sentence {
+    margin-top: 120px;
+}
+.item-sentence strong {
+    font-size: 20px;
+    margin-left: 115px;
+}
+.item-explain {
+    font-size: 12px;
+    text-align: center;
+}
+/*hobby*/
+.hobby-title {
+    font-size: 70px;
+}
+.hobby-contents {
+    font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ";
+    text-align: center;
+}
+/*モバイル版
+-------------------*/
+@media (max-width: 600px) {
+   
+    /*HRADER*/
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin-top: 0 20px;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* フッター */
+footer {
+    text-align: center;
+    padding: 26px 0;
+    margin-top: 40px;
+}
+footer p {
+    color: #432;
+    font-size: 0.875rem;
+}
